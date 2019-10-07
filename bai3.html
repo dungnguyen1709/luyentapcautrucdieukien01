@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <input type="text" id="songuyen" >
+    <input type="submit" value="In kết quả" onclick="tinhsonguyen();">
+</form>
+<script>
+    function tinhsonguyen() {
+        var soa = document.getElementById("songuyen").value;
+        var tsn = Number(soa);
+        if (soa >= 0 ) {
+            document.write("số A lớn hơn hoặc bằng 0");
+        }else {
+            document.write("số A nhỏ hơn 0");
+        }
+
+    }
+</script>
+</body>
+</html>

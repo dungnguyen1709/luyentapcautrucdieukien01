@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+   let diemkiemtra = parseInt(prompt("nhập điểm kiểm tra"));
+   let diemgiuaki = parseInt(prompt("nhập điểm giữa kì"));
+   let diemcuoiki = parseInt(prompt("nhập điểm cuối kì"));
+   let diemTB = (diemkiemtra + diemgiuaki + diemcuoiki)/3;
+       if (diemTB >= 9) {
+           alert("hạng A");
+       } else if (diemTB >= 7.0 && diemTB <= 9) {
+           alert("hạng B");
+       } else if (diemTB >= 5.0 && diemTB <= 7.0) {
+           alert("hạng C");
+       } else if (diemTB <= 5.0) {
+           alert("hạng F");
+       } else {
+           alert("không hợp lệ")
+       }
+
+
+</script>
+</body>
+</html>
